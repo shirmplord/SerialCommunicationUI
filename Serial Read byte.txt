@@ -1,0 +1,49 @@
+                // Read byte array
+
+                //SerialPort port = (SerialPort)sender;
+                //int bytes = serialPort.BytesToRead;
+                //byte[] inputBuffer = new byte[bytes];
+                //serialPort.Read(inputBuffer, 0, bytes);
+                //CRC16Checker cRC16 = new CRC16Checker();
+                //UInt16 crc = cRC16.GetCRC(inputBuffer, inputBuffer.Length - 1);
+                //if (crc != inputBuffer[inputBuffer.Length - 1])
+                //{
+                //    StringBuilder sb = new StringBuilder();
+                //    sb.Append("CRC mismatched. Expected: ");
+                //    sb.Append(crc);
+                //    sb.Append(" Received: " + inputBuffer[inputBuffer.Length - 1]);
+                //    MessageBox.Show(sb.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //}
+                //// nack response
+                //else if (inputBuffer[0] == 0) { }
+                //// ack response
+                //else if (inputBuffer[0] == 1) { }
+                //// status response
+                //else if (inputBuffer[0] == 12)
+                //{
+                //    try 
+                //    {
+                //        // Return the status data as is. Each element can be extracted and apply usage further
+                //        var sb = new StringBuilder("{");
+                //        foreach (byte data in inputBuffer)
+                //        {
+                //            //byte[] temp = new byte[1] { data };
+                //            //sb.Append(ByteToDecStr(temp) + ",");
+                //            sb.Append(data.ToString() + ",");
+                //        }
+                //        sb.Remove(sb.Length - 1, 1);
+                //        sb.Append("}");
+                //        ShowData(sb.ToString());
+                //    }
+                //    catch (Exception error)
+                //    {
+                //        MessageBox.Show(error.Message);
+                //    }
+
+                //}
+                //// version response
+                //// Return the version number to the text box
+                //else if (inputBuffer[0] == 13)
+                //{
+                //    ShowData(inputBuffer[4].ToString());
+                //}
